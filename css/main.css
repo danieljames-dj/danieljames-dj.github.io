@@ -594,7 +594,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #cc005f;
+	color: #4169e1;
 	border-bottom: 1px solid #FF0077;
 }
 label, legend {
@@ -1096,7 +1096,7 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 66px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
@@ -1337,7 +1337,7 @@ header .logo a {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #cc005f;
+	color: #4169e1;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1384,7 +1384,7 @@ header .logo a {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: #4169e1;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1416,7 +1416,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #4169e1;
 }
 
 /**
@@ -1956,7 +1956,7 @@ header .logo a {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: #4169e1;
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -2366,7 +2366,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #4169e1;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2578,7 +2578,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #4169e1;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
@@ -2597,3 +2597,35 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000000;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #808080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "poppins-medium", sans-serif;
+  font-weight: normal;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: white;
+  font-weight: normal;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+  font-weight: bold;
+}
