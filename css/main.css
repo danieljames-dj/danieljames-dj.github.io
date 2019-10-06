@@ -2629,3 +2629,73 @@ footer .copyright span:last-child::after {
   color: white;
   font-weight: bold;
 }
+
+#developer {
+	background-color: transparent;
+	background: #EBEBEB;
+}
+
+#developer .section-intro {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 3.6rem;
+	position: relative;
+}
+#developer .section-intro h1 {
+	font-family: "poppins-semibold", serif;
+	font-size: 3.6rem;
+	color: #313131;
+	line-height: 1.25;
+	margin-bottom: 1.2rem;
+}
+#developer .section-intro h5 {
+	color: #4169E1;
+	font-size: 1.6rem;
+	line-height: 1.875;
+	margin-bottom: 0.3rem;
+	letter-spacing: .4rem;
+}
+
+#developer h2 {
+	margin-left: auto;
+}
+
+#developer .language {
+	display: block;
+	text-align: left;
+	/*position: absolute;*/
+	/*width: 100%;*/
+	/*left: 0;*/
+	/*bottom: 7.2rem;*/
+	font-size: 2.3rem;
+	/*height: 53px;*/
+	margin-left: 0;
+	/*padding: 20px;*/
+}
+
+#developer .language ul {
+	margin-left: 0;
+}
+
+#developer h4 {
+	margin-bottom: 0rem;
+}
+
+#developer .language li {
+	/*border-radius: 5px;*/
+	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+	display: inline-block;
+	/*color: #ffffff;*/
+	/*background-color: #651FFF;*/
+	/*opacity: 0.5;*/
+	font-family: "poppins-semibold", sans-serif;
+	/*padding: 10px 15px 18px 15px;*/
+	/*margin: 5px auto;*/
+}
+
+#developer .disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+}
