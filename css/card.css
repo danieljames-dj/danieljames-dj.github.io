@@ -113,7 +113,6 @@ $paper-card-border: 1px solid #eee !default;
 .card {
   @include size(15em);
   margin: 2em;
-  background: white;
   display: inline-block;
 }
 
