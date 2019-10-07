@@ -7,6 +7,10 @@
 
 (function($) {
 
+	$("#about").load("html/about.html")
+	$("#developer").load("html/developer.html")
+	$("#footer").load("html/footer.html")
+
 	"use strict";
 
 	/*---------------------------------------------------- */
