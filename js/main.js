@@ -9,6 +9,7 @@
 
 	$("#about").load("html/about.html")
 	$("#developer").load("html/developer.html")
+	$("#cuber").load("html/cuber.html")
 	$("#footer").load("html/footer.html")
 
 	"use strict";

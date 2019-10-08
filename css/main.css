@@ -2681,3 +2681,36 @@ footer .copyright span:last-child::after {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	/*min-width: 200px;*/
 }
+
+.col-1 {
+	background-color: #3E4248;
+	margin: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	color: white;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+
+.col-1-content {
+	width: 200px;
+	position: relative;
+	top: 50%;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	text-align: center;
+	align-items: center;
+	transform: translateY(-50%);
+	font-family: "lora-regular", serif;
+	font-size: 3rem;
+}
+
+#cuber {
+	background: #FFFFFF;
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+}
