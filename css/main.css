@@ -1626,13 +1626,6 @@ header .logo a {
 	padding-bottom: 12rem;
 }
 
-#about .resume-header {
-	text-align: center;
-}
-#about .resume-header h2 {
-	color: #4169E1;
-}
-
 #about .resume-timeline {
 	max-width: 980px;
 }
@@ -1764,7 +1757,7 @@ header .logo a {
 	}
 }
 @media only screen and (max-width:480px) {
-	#about .resume-header h2 {
+	#about .sub-header h2 {
 		font-size: 2.2rem;
 	}
 	#about .timeline-wrap::before {
@@ -2739,4 +2732,9 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+}
+
+.sub-header h2 {
+	color: #808080;
+	text-align: center;
 }
