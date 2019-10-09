@@ -2738,3 +2738,11 @@ height: 100%;
 	color: #808080;
 	text-align: center;
 }
+
+#traveller {
+	background-color: transparent;
+	background: #EBEBEB;
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+	text-align: center;
+}
