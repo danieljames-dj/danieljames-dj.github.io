@@ -11,6 +11,7 @@
 	$("#developer").load("html/developer.html")
 	$("#cuber").load("html/cuber.html")
 	$("#traveller").load("html/traveller.html")
+	$("#gamer").load("html/gamer.html")
 	$("#footer").load("html/footer.html")
 
 	"use strict";
