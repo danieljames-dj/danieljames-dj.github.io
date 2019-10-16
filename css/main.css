@@ -2755,12 +2755,6 @@ height: 100%;
 	text-align: center;
 }
 
-.wrapper {
-	max-width: 680px;
-	margin: 60px auto;
-	padding: 0 20px;
-}
-
 .youtube {
 	background-color: #000;
 	margin-bottom: 30px;
@@ -2774,6 +2768,23 @@ height: 100%;
 	top: -16.82%;
 	left: 0;
 	opacity: 0.7;
+}
+.youtube .youtube-title {
+	width: 96%;
+	color: white;
+	padding-top: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-overflow: ellipsis;
+	font-family: "poppins-regular", serif;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 18px;
+	z-index: 1;
+	top: 0%;
+	left: 0%;
+	position: absolute;
 }
 .youtube .play-button {
 	width: 90px;
