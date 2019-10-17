@@ -2672,6 +2672,13 @@ footer .copyright span:last-child::after {
 
 .blogpost {
 	background-color: white;
+	height: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	/*min-width: 200px;*/
+}
+
+.gamepost {
+	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	/*min-width: 200px;*/
 }
@@ -2785,6 +2792,24 @@ height: 100%;
 	top: 0%;
 	left: 0%;
 	position: absolute;
+}
+.blog-title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-wrap: break-word;
+	display: -webkit-box;
+	text-align: center;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+.blog-content {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-wrap: break-word;
+	display: -webkit-box;
+	text-align: left;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
 .youtube .play-button {
 	width: 90px;
