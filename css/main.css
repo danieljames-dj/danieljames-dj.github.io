@@ -2850,6 +2850,12 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #fff !important;
 }
 
+@media (hover: hover) {
+	a: hover {
+		color: #4169E1;
+	}
+}
+
 .opaque { background-color: #333; }
 
 
@@ -2900,14 +2906,17 @@ ul#nav li.current a {color:#0088ff;}
 	position: fixed;
 	left: 0;
 	top: 0;
-	font: 12px 'poppins-bold', sans-serif;
+	font: 13px 'poppins-medium', sans-serif;
 	line-height: 32px;
+}
+
+.topnav .current {
+	font: 13px 'poppins-bold', sans-serif;
 }
 
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: #ffffff;
   text-align: center;
   padding: 8px 13px;
@@ -2935,11 +2944,4 @@ ul#nav li.current a {color:#0088ff;}
 	 padding: 0;
 	 border: none;
 	 outline: none;
-}
-
-@media (hover: hover) {
-	.topnav a: hover {
-		color: #4169E1;
-		font-weight: normal;
-	}
 }
