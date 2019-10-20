@@ -1500,7 +1500,7 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 6rem;
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -2603,7 +2603,7 @@ footer .copyright span:last-child::after {
 	background-color: transparent;
 	background: #EBEBEB;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 12rem;
 }
 
 #developer .language {
@@ -2713,7 +2713,7 @@ footer .copyright span:last-child::after {
 #cuber {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 12rem;
 	text-align: center;
 }
 
@@ -2751,14 +2751,14 @@ height: 100%;
 	background-color: transparent;
 	background: #EBEBEB;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 12rem;
 	text-align: center;
 }
 
 #gamer {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 12rem;
 	text-align: center;
 }
 
