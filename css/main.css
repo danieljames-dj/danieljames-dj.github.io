@@ -2592,46 +2592,6 @@ footer .copyright span:last-child::after {
 
 /*# sourceMappingURL=main.css.map */
 
-/* Add a black background color to the top navigation */
-.topnav {
-  opacity: 0.9;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  padding: 8px 13px;
-  letter-spacing: 2.5px;
-  line-height: 32px;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: "poppins-bold", sans-serif;
-  font-weight: normal;
-}
-
-.opaque {
-	background-color: #333;
-}
-
-/* Change the color of links on hover */
-@media (hover: hover) {
-    .topnav a:hover {
-	  color: #4169E1;
-	  font-weight: normal;
-	}
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: #4169E1;
-  font-weight: bold;
-}
-
 #developer {
 	background-color: transparent;
 	background: #EBEBEB;
@@ -2888,4 +2848,98 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: #fff !important;
+}
+
+.opaque { background-color: #333; }
+
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+ul#nav li a:hover {color:#0088ff;}
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a {color:#0088ff;}
+
+.topnav {
+	opacity: 0.9;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto;
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	top: 0;
+	font: 12px 'poppins-bold', sans-serif;
+	line-height: 32px;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 13px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.topnav ul {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+.topnav li {
+	margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+.topnav a {
+	margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+@media (hover: hover) {
+	.topnav a: hover {
+		color: #4169E1;
+		font-weight: normal;
+	}
 }
