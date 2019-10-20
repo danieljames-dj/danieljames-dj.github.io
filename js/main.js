@@ -234,7 +234,7 @@
 			var sLoader = $('#submit-loader');
 
 			$.ajax({
-		        url: "http://localhost:5000/quickstart-1558680018914/us-central1/addMessage" + "?text=Hello World!!",// + key + " &q=" + $( this ).text(),
+		        url: "https://us-central1-quickstart-1558680018914.cloudfunctions.net/addMessage" + "?text=Hello World!!",// + key + " &q=" + $( this ).text(),
 		        contentType: "application/json",
 		        dataType: 'json',
 		        success: function(result){
