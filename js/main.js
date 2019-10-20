@@ -218,16 +218,6 @@
 	/* local validation */
 	$('#contactForm').validate({
 
-
-		// $.ajax({
-	 //        url: "https://us-central1-quickstart-1558680018914.cloudfunctions.net/addMessage" + "?text=Hello World!!",// + key + " &q=" + $( this ).text(),
-	 //        contentType: "application/json",
-	 //        dataType: 'json',
-	 //        success: function(result){
-	 //            console.log(result);
-	 //        }
-	 //    })
-
 		/* submit via ajax */
 		submitHandler: function(form) {
 
@@ -235,40 +225,31 @@
 
 			$.ajax({      	
 
-		      type: "POST",
-		      url: "https://send.pageclip.co/YuzawBxTH9Qkq1dThUMx1tjyTGpciYvu",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
+			      type: "POST",
+			      url: "/submit",
+			      data: $(form).serialize(),
+			      beforeSend: function() { 
+					$('#submit-old').hide();
+					$('#submit-new').fadeIn();
+			      	sLoader.fadeIn(); 
+					console.log("sending....")
+			      },
+			      success: function(response) {
+					   console.log('message sent')
+		            	sLoader.fadeOut(); 
+		               $('#message-warning').hide();
+		               $('#contactForm').fadeOut();
+		               $('#message-success').fadeIn();   
+		            },
+			      error: function(error) {
 
-		      	// sLoader.fadeIn(); 
+			      	sLoader.fadeOut(); 
+			      	$('#message-warning').html("Something went wrong. Please try again.");
+			         $('#message-warning').fadeIn();
 
-		      },
-		      success: function(msg) {
-		      	console.log(msg)
-	            // Message was sent
-	            // if (msg == 'OK') {
-	            // 	sLoader.fadeOut(); 
-	            //    $('#message-warning').hide();
-	            //    $('#contactForm').fadeOut();
-	            //    $('#message-success').fadeIn();   
-	            // }
-	            // // There was an error
-	            // else {
-	            // 	sLoader.fadeOut(); 
-	            //    $('#message-warning').html(msg);
-		           //  $('#message-warning').fadeIn();
-	            // }
+			      }
 
-		      },
-		      error: function() {
-
-		      	// sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
-
-		      }
-
-	      });     		
+		      }); 		
   		}
 
 	});
