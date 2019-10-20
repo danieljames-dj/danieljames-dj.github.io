@@ -90,9 +90,16 @@ a, a:visited {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-a:hover, a:focus, a:active {
+a:focus, a:active {
 	color: #4169E1;
 	outline: 0;
+}
+
+@media (hover: hover) {
+	a: hover {
+		color: #4169E1;
+		outline: 0;
+	}
 }
 
 /** 
@@ -2891,7 +2898,12 @@ ul#nav li a {
 	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 }
-ul#nav li a:hover {color:#0088ff;}
+
+@media(hover: hover) {
+	ul#nav li a:hover {color:#0088ff;}
+}
+
+
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a {color:#0088ff;}
 
