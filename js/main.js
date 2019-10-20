@@ -277,10 +277,14 @@
 
 		// change nav bar on scrolling
 		var scrollPos = $(document).scrollTop() + $(".topnav").height();
-		if(scrollPos<250 && scrollPos>2) {
+		if(scrollPos<250 && scrollPos>2 + $(".topnav").height()) {
 			$(".topnav")[0].hidden = true
+			$(".topnav").addClass("opaque")
 		} else {
 			$(".topnav")[0].hidden = false
+			if (scrollPos<250) {
+				$(".topnav").removeClass("opaque")
+			}
 		}
 	    $('#navbar a').each(function () {
 	        var currLink = $(this);
