@@ -214,50 +214,70 @@
 	/*	contact form
 	------------------------------------------------------ */
 
+
 	/* local validation */
 	$('#contactForm').validate({
+
+
+		// $.ajax({
+	 //        url: "https://us-central1-quickstart-1558680018914.cloudfunctions.net/addMessage" + "?text=Hello World!!",// + key + " &q=" + $( this ).text(),
+	 //        contentType: "application/json",
+	 //        dataType: 'json',
+	 //        success: function(result){
+	 //            console.log(result);
+	 //        }
+	 //    })
 
 		/* submit via ajax */
 		submitHandler: function(form) {
 
 			var sLoader = $('#submit-loader');
 
-			$.ajax({      	
+			$.ajax({
+		        url: "http://localhost:5000/quickstart-1558680018914/us-central1/addMessage" + "?text=Hello World!!",// + key + " &q=" + $( this ).text(),
+		        contentType: "application/json",
+		        dataType: 'json',
+		        success: function(result){
+		            console.log(result);
+		        }
+		    })
 
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
+			// $.ajax({      	
 
-		      	sLoader.fadeIn(); 
+		 //      type: "POST",
+		 //      url: "../php/sendEmail.php",
+		 //      data: $(form).serialize(),
+		 //      beforeSend: function() { 
 
-		      },
-		      success: function(msg) {
+		 //      	sLoader.fadeIn(); 
 
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
+		 //      },
+		 //      success: function(msg) {
 
-		      },
-		      error: function() {
+	  //           // Message was sent
+	  //           if (msg == 'OK') {
+	  //           	sLoader.fadeOut(); 
+	  //              $('#message-warning').hide();
+	  //              $('#contactForm').fadeOut();
+	  //              $('#message-success').fadeIn();   
+	  //           }
+	  //           // There was an error
+	  //           else {
+	  //           	sLoader.fadeOut(); 
+	  //              $('#message-warning').html(msg);
+		 //            $('#message-warning').fadeIn();
+	  //           }
 
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+		 //      },
+		 //      error: function() {
 
-		      }
+		 //      	sLoader.fadeOut(); 
+		 //      	$('#message-warning').html("Something went wrong. Please try again.");
+		 //         $('#message-warning').fadeIn();
 
-	      });     		
+		 //      }
+
+	  //     });     		
   		}
 
 	});
