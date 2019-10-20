@@ -596,7 +596,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
 	color: #4169e1;
-	border-bottom: 1px solid #FF0077;
+	border-bottom: 1px solid #4169e1;
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
@@ -2304,7 +2304,7 @@ header .logo a {
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #FF0077;
+	background: #4169e1;
 }
 #contact form .form-field label::after {
 	position: absolute;
@@ -2313,7 +2313,7 @@ header .logo a {
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #FF0077;
+	border-right: 5px solid #4169e1;
 	content: "";
 }
 #contact input[type="text"],
@@ -2335,7 +2335,7 @@ header .logo a {
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #FF0077;
+	border-color: #4169e1;
 	color: #FFFFFF;
 }
 #contact textarea {
@@ -2343,11 +2343,11 @@ header .logo a {
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-	border-color: #FF0077;
+	border-color: #4169e1;
 	color: #FFFFFF;
 }
 #contact button.submitform {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	display: block;
 	letter-spacing: .2rem;
 	height: 6.6rem;
@@ -2355,7 +2355,7 @@ header .logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #FF0077;
+	background: #808080;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
@@ -2373,7 +2373,7 @@ header .logo a {
 	color: #fa0003;
 }
 #message-success {
-	color: #FF0077;
+	color: #4169e1;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
