@@ -276,7 +276,7 @@
 		}		
 
 		// change nav bar on scrolling
-		var scrollPos = $(document).scrollTop();
+		var scrollPos = $(document).scrollTop() + $(".topnav").height();
 		if(scrollPos<250 && scrollPos>2) {
 			$(".topnav")[0].hidden = true
 		} else {
@@ -285,7 +285,7 @@
 	    $('#navbar a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos + 5 && refElement.position().top + refElement.height() > scrollPos) {
+	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.outerHeight() > scrollPos) {
 	            $('#menu-center ul li a').removeClass("active");
 	            currLink.addClass("active");
 	        }
