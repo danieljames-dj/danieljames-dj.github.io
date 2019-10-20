@@ -2900,12 +2900,12 @@ ul#nav li a {
 }
 
 @media(hover: hover) {
-	ul#nav li a:hover {color:#0088ff;}
+	ul#nav li a:hover {color:#4169E1;}
 }
 
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a {color:#0088ff;}
+ul#nav li.current a {color:#4169E1;}
 
 .topnav {
 	opacity: 0.9;
@@ -2918,12 +2918,12 @@ ul#nav li.current a {color:#0088ff;}
 	position: fixed;
 	left: 0;
 	top: 0;
-	font: 13px 'poppins-medium', sans-serif;
+	font: 15px 'poppins-medium', sans-serif;
 	line-height: 32px;
 }
 
 .topnav .current {
-	font: 13px 'poppins-bold', sans-serif;
+	font: 15px 'poppins-bold', sans-serif;
 }
 
 
