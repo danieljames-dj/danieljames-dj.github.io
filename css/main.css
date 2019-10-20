@@ -2614,9 +2614,11 @@ footer .copyright span:last-child::after {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  color: #4169E1;
-  font-weight: normal;
+@media (hover: hover) {
+    .topnav a:hover {
+	  color: #4169E1;
+	  font-weight: normal;
+	}
 }
 
 /* Add a color to the active/current link */
