@@ -214,45 +214,44 @@
 	/*	contact form
 	------------------------------------------------------ */
 
-
 	/* local validation */
-	$('#contactForm').validate({
+	// $('#contactForm').validate({
 
-		/* submit via ajax */
-		submitHandler: function(form) {
+	// 	/* submit via ajax */
+	// 	submitHandler: function(form) {
 
-			var sLoader = $('#submit-loader');
+	// 		var sLoader = $('#submit-loader');
 
-			$.ajax({      	
+	// 		$.ajax({      	
 
-			      type: "POST",
-			      url: "/submit",
-			      data: $(form).serialize(),
-			      beforeSend: function() { 
-					$('#submit-old').hide();
-					$('#submit-new').fadeIn();
-			      	sLoader.fadeIn(); 
-					console.log("sending....")
-			      },
-			      success: function(response) {
-					   console.log('message sent')
-		            	sLoader.fadeOut(); 
-		               $('#message-warning').hide();
-		               $('#contactForm').fadeOut();
-		               $('#message-success').fadeIn();   
-		            },
-			      error: function(error) {
+	// 		      type: "POST",
+	// 		      url: "/submit",
+	// 		      data: $(form).serialize(),
+	// 		      beforeSend: function() { 
+	// 				$('#submit-old').hide();
+	// 				$('#submit-new').fadeIn();
+	// 		      	sLoader.fadeIn(); 
+	// 				console.log("sending....")
+	// 		      },
+	// 		      success: function(response) {
+	// 				   console.log('message sent')
+	// 	            	sLoader.fadeOut(); 
+	// 	               $('#message-warning').hide();
+	// 	               $('#contactForm').fadeOut();
+	// 	               $('#message-success').fadeIn();   
+	// 	            },
+	// 		      error: function(error) {
 
-			      	sLoader.fadeOut(); 
-			      	$('#message-warning').html("Something went wrong. Please try again.");
-			         $('#message-warning').fadeIn();
+	// 		      	sLoader.fadeOut(); 
+	// 		      	$('#message-warning').html("Something went wrong. Please try again.");
+	// 		         $('#message-warning').fadeIn();
 
-			      }
+	// 		      }
 
-		      }); 		
-  		}
+	// 	      }); 		
+ //  		}
 
-	});
+	// });
 
 
  	/*----------------------------------------------------- */
