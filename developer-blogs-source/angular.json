@@ -36,6 +36,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "../developer-blogs",
+            "baseHref" : "/developer-blogs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
