@@ -10,6 +10,17 @@ mat-icon {
     cursor: pointer;
 }
 
+mat-card-subtitle {
+    display: block;
+    display: -webkit-box;
+    word-wrap: break-word;
+    text-align: justify;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .container {
   margin: 0 auto;
 }

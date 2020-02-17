@@ -6,96 +6,20 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
-<h3>Back end</h3>
-
-<div class="container">
-<div class="grid-row">
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Image">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
+<div *ngFor="let category of blogs.default">
+    <h3>{{category.category}}</h3>
+    <div class="container">
+        <div class="grid-row">
+            <div class="grid-item" *ngFor="let blog of category.blogs">
+                <a class="wrapping-link" href={{blog.link}} target="_blank"></a>
+                <mat-card class="example-card">
+                <mat-card-content>
+                    <img mat-card-image src={{blog.image}} alt="Image">
+                    <mat-card-title>{{blog.title}}</mat-card-title>
+                    <mat-card-subtitle>{{blog.text}}</mat-card-subtitle>
+                </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
     </div>
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Photo of a Shiba Inu">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-</div>
-</div>
-
-<h3>Next end</h3>
-
-<div class="container">
-<div class="grid-row">
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Image">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Photo of a Shiba Inu">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Photo of a Shiba Inu">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Photo of a Shiba Inu">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Photo of a Shiba Inu">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-    <div class="grid-item">
-    <a class="wrapping-link" href="https://google.com"></a>
-    <mat-card class="example-card">
-    <mat-card-content>
-        <img mat-card-image src="./assets/apache.png" alt="Photo of a Shiba Inu">
-        <mat-card-title>Multiple websites with Apache 2</mat-card-title>
-        <mat-card-subtitle>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</mat-card-subtitle>
-    </mat-card-content>
-    </mat-card>
-    </div>
-</div>
 </div>

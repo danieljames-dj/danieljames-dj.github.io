@@ -1,0 +1,44 @@
+[
+    {
+        "category": "Machine Learning",
+        "blogs": [{
+			"title": "Programmatic approach to Machine Learning",
+            "text": "There are lots of definitions for Machine Learning and I would like to use the most basic definition: it’s a process in which the machine is learning (not going much deep for a better definition because there are many more important things). The learning can be classified into 4 for easier understanding: 1. Supervised Learning 2. Unsupervised Learning 3. Semi-supervised Learning 4. Reinforcement Learning",
+            "link": "https://medium.com/@daniel_james/programmatic-approach-to-machine-learning-eef78782738f",
+			"image": "./assets/ml.png"
+        },
+        {
+			"title": "Supervised Learning for Classification problem",
+            "text": "In supervised learning, a set of inputs and corresponding outputs will be given to the machine. The machine is supposed to find a function that will give the desired output for all the inputs. In classification problems, the output will be having discrete values.",
+            "link": "https://www.kaggle.com/danieljamesdj/supervised-learning-for-classification-problem",
+			"image": "./assets/classification.png"
+		},
+        {
+			"title": "Supervised Learning for Regression problem",
+            "text": "In supervised learning, a set of inputs and corresponding outputs will be given to the machine. The machine is supposed to find a function that will give the desired output for all the inputs. In regression problems, the output will be having continuous values.",
+            "link": "https://www.kaggle.com/danieljamesdj/supervised-learning-for-regression-problem",
+			"image": "./assets/regression.png"
+		}]
+    },
+    {
+        "category": "Dev Ops",
+        "blogs": [{
+            "title": "Having multiple websites in the same EC2 instance",
+            "text": "Imagine you have to create different websites, but you have only one EC2 instance to host them. The solution I would suggest is to host the websites in different ports (other than 80) and the Apache2 should be listening to port 80. From port 80, Apache2 will redirect to different websites depending on the domain name. Here are the complete steps:",
+            "link": "https://medium.com/@daniel_james/having-multiple-websites-in-the-same-ec2-instance-c02c3e0feab7",
+			"image": "./assets/apache.png"
+        },
+        {
+			"title": "Make your website run in https using Certbot",
+            "text": "Certbot is a tool that gives free SSL certificates to all your websites so that you can open the website in https. I got to know about the Certbot through letsencrypt.org. Here are the steps I did: 1. I was asked to select the software that is listening to port 80 and the system OS at https://certbot.eff.org. I was using Apache on Ubuntu 16.04.",
+            "link": "https://medium.com/@daniel_james/make-your-website-run-in-https-using-certbot-b8e2eafa9bc1",
+			"image": "./assets/certbot.png"
+		},
+        {
+			"title": "Create build with Jenkins",
+            "text": "Jenkins is an open-source tool to automate tasks. Here are the commands to install Jenkins in Linux with ‘apt-get’ as per the official site of Jenkins: wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -",
+            "link": "https://medium.com/@daniel_james/create-build-with-jenkins-b411d64d8404",
+			"image": "./assets/jenkins.png"
+		}]
+    }
+]
