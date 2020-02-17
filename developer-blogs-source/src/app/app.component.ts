@@ -12,7 +12,5 @@ export class AppComponent {
 
   ngOnInit() {
     this.blogs = data
-    console.log(this.blogs)
-    console.log(this.blogs.default[1].id)
   }
 }
