@@ -681,6 +681,17 @@ input[type="button"] {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
+.skill-button {
+    white-space: normal;
+    height: auto;
+    line-height: unset !important;
+}
+
+.dev_image {
+
+}
+
 .button:hover,
 a.button:hover,
 button:hover,
@@ -2956,4 +2967,41 @@ ul#nav li.current a {color:#4169E1;}
 	 padding: 0;
 	 border: none;
 	 outline: none;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+}
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.image-container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .7);
+}
+
+.image-dev {
+    display: block;
+    opacity: 0.3;
+}
+
+.image-title {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto';
+    letter-spacing: 0.2rem;
+    text-align: center;
 }
