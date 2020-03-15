@@ -3013,13 +3013,15 @@ ul#nav li.current a {color:#4169E1;}
 
 .skillset-heading {
 	margin-top: 5px;
+	font-family: "poppins-semibold", serif;
 	font-size: 20px;
-	color: #333333;
+	color: #313131;
 }
 
 .skillset-content {
-	text-align: center;
-	color: #000;
+	text-align: justify;
+	font-family: "lora-regular", serif;
+	color: #6e6e6e;
 }
 
 .newTitle {
