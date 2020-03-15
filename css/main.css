@@ -1342,7 +1342,7 @@ header .logo a {
 }
 
 .new-font {
-	font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+	font-family: "poppins", "Helvetica", "Arial", sans-serif !important;
 }
 
 .intro-content {
@@ -3023,7 +3023,7 @@ ul#nav li.current a {color:#4169E1;}
 }
 
 .newTitle {
-	font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+	font-family: "poppins", "Helvetica", "Arial", sans-serif !important;
 	text-align: center;
 	font-size: 30px;
 	letter-spacing: 1px;
@@ -3035,7 +3035,7 @@ ul#nav li.current a {color:#4169E1;}
 }
 
 .newSubTitle {
-	font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+	font-family: "poppins", "Helvetica", "Arial", sans-serif !important;
 	text-align: center;
 	font-size: 12px;
 	letter-spacing: 3.5px;
