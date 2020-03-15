@@ -108,8 +108,14 @@ a:focus, a:active {
  *
  * ------------------------------------------------------------------- 
  */
-h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
+h1, h2, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
+	color: #313131;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 2.1rem;
+}
+h3 {
 	color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -3000,8 +3006,41 @@ ul#nav li.current a {color:#4169E1;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Roboto';
-    letter-spacing: 0.2rem;
+	color: white;
+    letter-spacing: 4px;
     text-align: center;
+}
+
+.skillset-heading {
+	margin-top: 5px;
+	font-size: 20px;
+	color: #333333;
+}
+
+.skillset-content {
+	text-align: center;
+	color: #000;
+}
+
+.newTitle {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 1px;
+	color: #4169E1;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 0 0px;
+}
+
+.newSubTitle {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 3.5px;
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: 100;
+	line-height: 1.5;
 }
