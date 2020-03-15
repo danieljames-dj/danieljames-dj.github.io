@@ -1335,6 +1335,10 @@ header .logo a {
 	opacity: .85;
 }
 
+.new-font {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+
 .intro-content {
 	display: table-cell;
 	vertical-align: middle;
@@ -1343,10 +1347,11 @@ header .logo a {
 	-ms-transform: translateY(-2.1rem);
 	transform: translateY(-2.1rem);
 }
+
 .intro-content h1 {
 	color: #FFFFFF;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 8.4rem;
+	font-weight: 300;
+	letter-spacing: 4px;
 	line-height: 1.071;
 	max-width: 900px;
 	margin-top: 0;
@@ -1357,7 +1362,6 @@ header .logo a {
 }
 .intro-content h5 {
 	color: #4169e1;
-	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
 	margin-bottom: 0;
@@ -1366,7 +1370,6 @@ header .logo a {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
@@ -2532,9 +2535,6 @@ footer .footer-social li {
 	margin: 0 12px;
 	padding: 0;
 }
-footer .footer-social li a {
-	color: #FFFFFF;
-}
 footer .copyright span {
 	display: inline-block;
 }
@@ -2929,12 +2929,12 @@ ul#nav li.current a {color:#4169E1;}
 	position: fixed;
 	left: 0;
 	top: 0;
-	font: 15px 'poppins-medium', sans-serif;
+	font: 15px;
 	line-height: 32px;
 }
 
 .topnav .current {
-	font: 15px 'poppins-bold', sans-serif;
+	font: 15px;
 }
 
 
