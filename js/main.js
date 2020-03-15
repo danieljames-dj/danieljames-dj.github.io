@@ -337,7 +337,7 @@
 
 	function setScroll() {
 		var scrollPos = $(document).scrollTop() + $(".topnav").height();
-		if(scrollPos<250 && scrollPos>2 + $(".topnav").height()) {
+		if(scrollPos<250 + $(".topnav").height()) {
 			$(".topnav")[0].hidden = true
 			$(".topnav").addClass("opaque")
 		} else {
