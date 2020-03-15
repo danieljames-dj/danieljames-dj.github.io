@@ -12,5 +12,6 @@ export class AppComponent {
 
   ngOnInit() {
     this.blogs = data
+    // to create the asset in gimp, use the dimension 500x200
   }
 }

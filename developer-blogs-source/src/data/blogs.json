@@ -39,6 +39,24 @@
             "text": "Jenkins is an open-source tool to automate tasks. Here are the commands to install Jenkins in Linux with ‘apt-get’ as per the official site of Jenkins: wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -",
             "link": "https://medium.com/@daniel_james/create-build-with-jenkins-b411d64d8404",
 			"image": "./assets/jenkins.png"
+		},
+        {
+			"title": "Cloud hosting providers and web server software",
+            "text": "Cloud hosting is a cloud computing service that comes under IaaS (Infrastructure as a Service). In this service, you will be given a remote computer in which you can do various operations that you do on a normal computer.",
+            "link": "https://medium.com/@daniel_james/cloud-hosting-providers-and-web-server-software-eeb58582c535",
+			"image": "./assets/aws.png"
+		},
+        {
+			"title": "Apache Tomcat",
+            "text": "Basic installation steps: 1. Install Java: sudo apt-get update; sudo apt-get install default-jdk; 2. Find the latest version of Tomcat 8 at the Tomcat 8 Downloads page (http://tomcat.apache.org/download-80.cgi). Under the Binary Distributions section, then under the Core list, copy the link to the “tar.gz”. Install it. (Example: curl -O http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.45/bin/apache-tomcat-8.5.45.tar.gz)",
+            "link": "https://medium.com/@daniel_james/apache-tomcat-51f9eb72388d",
+			"image": "./assets/apache_tomcat.png"
+		},
+        {
+			"title": "Web Application using Spring Boot and Hibernate",
+            "text": "Here’s a tutorial on creating a Spring Boot web application (along with the configuration of Hibernate): 1. Create a new project - There are many ways to start a new project. I’ve chosen to generate the starter package using Spring Initializer. I didn’t go for any IDE because I personally prefer to make the project independent of IDE, so that this will be useful for anybody.",
+            "link": "https://medium.com/@daniel_james/web-application-using-spring-boot-and-hibernate-cb3e38dc447c",
+			"image": "./assets/spring.png"
 		}]
     }
 ]
