@@ -29,6 +29,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/fa/all.min.css">
 	<link rel="stylesheet" href="css/fa/fontawesome.min.css">
@@ -37,6 +39,13 @@
 	<link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/card.css">
 	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+	<!-- Vendor CSS Files -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 	<!-- script -->
 	<script src="js/modernizr.js"></script>
@@ -63,7 +72,7 @@
 	<!-- navigationbar -->
 	<header>   	
 		<div class="new-font topnav" id="navbar">
-			<ul id="nav" class="nav">
+			<ul id="nav" class="nav" style="display: block;">
 				<li class="current"><a class="smoothscroll" href="#intro">Home</a></li>
 				<li><a class="smoothscroll" href="#coder">Coding</a></li>
 				<li><a class="smoothscroll" href="#cuber">Cubing</a></li>
@@ -98,104 +107,210 @@
 	</section> <!-- /intro -->
 
 	<!-- about -->
-	<section id="coder">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Coder</h5>
-				<h1>All about my Coding.</h1>
-				<div class="intro-info">
-					<p class="lead" style="text-align: justify;">I'm Daniel James and friends call me Dany or DJ. I'm currently working as a software developer in Fundfolio, Kochi. I'm interested in developing web apps & mobile apps. I'm a Math nerd and have a strong grit in solving computational problems. Machine learning is one of the domain that I'm very inquisitive about. I'm an avid speedcuber and a fun loving guy.</p>
-				</div> 
+	<section id="coder" class="portfolio">
+		<div class="container" data-aos="fade-up">
+
+			<div class="portfolio-title">
+				<h2>Coding</h2>
+				<p>I'm a Full-Stack Developer and my favorite tech-stack is MERN (MongoDB, Express, React, Node) and my favorite programming language is JavaScript. The following are some of my works:</p>
 			</div>
-		</div>
+
+			<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+				<div class="col-lg-4 col-md-6 portfolio-item">
+					<div class="portfolio-wrap">
+						<img src="images/coder/fundfolio.png" class="img-fluid" alt="">
+						<div class="portfolio-info" style="background-color: rgba(0, 0, 0, 0.7);">
+							<h4>Fundfolio</h4>
+							<p>Currently working as Software Engineer 2 at Fundfolio.</p>
+							<!-- <button type="button" class="portfolio-more" data-toggle="modal" data-target="#exampleModal">MORE</button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item">
+					<div class="portfolio-wrap">
+						<img src="images/coder/zoho.jpeg" class="img-fluid" alt="">
+						<div class="portfolio-info" style="background-color: rgba(0, 0, 0, 0.7);">
+							<h4>Zoho</h4>
+							<p>Worked at Zoho for 4 years in different domains like Full-Stack development & mobile app development.</p>
+							<button type="button" class="portfolio-more" data-toggle="modal" data-target="#zohoModal">MORE</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item">
+					<div class="portfolio-wrap">
+						<img src="images/coder/wca.png" class="img-fluid" alt="">
+						<div class="portfolio-info" style="background-color: rgba(0, 0, 0, 0.7);">
+							<h4>World Cube Association (Open-Source)</h4>
+							<p>Implemented features like Delegate table structuring, score upload processing, etc and fixed few bugs. Worked in purging of database using MySQL queries as part of Results Team.</p>
+							<!-- <button type="button" class="portfolio-more" data-toggle="modal" data-target="#exampleModal">MORE</button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item">
+					<div class="portfolio-wrap">
+						<img src="images/coder/trading-bot.png" class="img-fluid" alt="">
+						<div class="portfolio-info" style="background-color: rgba(0, 0, 0, 0.7);">
+							<h4>Trading Bot</h4>
+							<p>A live trading application which is built using Node.js & hosted in AWS. It analyze live stock market trends and charts to decide entry and exit points.</p>
+							<!-- <button type="button" class="portfolio-more" data-toggle="modal" data-target="#exampleModal">MORE</button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item">
+					<div class="portfolio-wrap">
+						<img src="images/coder/nasa.png" class="img-fluid" alt="">
+						<div class="portfolio-info" style="background-color: rgba(0, 0, 0, 0.7);">
+							<h4>Sunshine (NASA Space App Challenge)</h4>
+							<p>Winner, for building prototype applications to effectively utilize solar power.</p>
+							<!-- <button type="button" class="portfolio-more" data-toggle="modal" data-target="#exampleModal">MORE</button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item">
+					<div class="portfolio-wrap">
+						<img src="images/coder/eyantra.png" class="img-fluid" alt="">
+						<div class="portfolio-info" style="background-color: rgba(0, 0, 0, 0.7);">
+							<h4>Bothoven (e-Yantra Robotics competition)</h4>
+							<p>A synchronized robot system that produces music according to given notes was built.</p>
+							<!-- <button type="button" class="portfolio-more" data-toggle="modal" data-target="#exampleModal">MORE</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>Web 3</h4>
+					<p>Web</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>App 2</h4>
+					<p>App</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>Card 2</h4>
+					<p>Card</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>Web 2</h4>
+					<p>Web</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>App 3</h4>
+					<p>App</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>Card 1</h4>
+					<p>Card</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>Card 3</h4>
+					<p>Card</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
+				<div class="portfolio-wrap">
+					<img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+					<div class="portfolio-info">
+					<h4>Web 3</h4>
+					<p>Web</p>
+					<div class="portfolio-links">
+						<a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+						<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					</div>
+					</div>
+				</div>
+				</div> -->
+
+			</div>
+
+			</div>
+			<div class="col-twelve tab-full social" style="text-align: center; height: 40px;">
+				<ul class="coder-social">
+					<li><a href="https://github.com/danieljames-dj" target="_blank"><i class="fab fa-github" style="font-size: 30px;"></i></a></li>
+					<li><a href="http://www.linkedin.com/in/danieljames-dj" target="_blank"><i class="fab fa-linkedin" style="font-size: 30px;"></i></a></li>
+					<li><a href="https://medium.com/@daniel_james" target="_blank"><i class="fab fa-medium" style="font-size: 30px;"></i></a></li>
+				</ul>
+			</div>
 
 		<div class="row resume-timeline">
 
 			<div class="col-twelve sub-header">
 
-				<h2>Work Experience</h2>
-
 			</div> <!-- /resume-header -->
-
-			<div class="col-twelve">
-
-				<div class="timeline-wrap">
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3 class="new-font">Full Stack Developer</h3>
-							<p>Jul 2019 - Present</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Zoho Corporation</h4>
-                            <p style="text-align: justify;">I'm currently working for the Zoho Sheet application as a Full Stack Developer. Zoho Sheet is an online SaaS-based spreadsheet application.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3 class="new-font">iOS Developer</h3>
-							<p>Jun 2017 - Jun 2019</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Zoho Corporation</h4>
-                            <p style="text-align: justify;">Zoho Sheet is one of the fastest spreadsheets available in App Store. The iOS app renders the spreadsheet in 60 FPS (Frames Per Second). In Zoho Sheet iOS, I've worked in migration of the app from Objective-C to Swift 3, and later to Swift 5. I played a key role in introducing VIPER architecture in the app, which made it much more scalable and integrated OOP concepts in the codebase. Other key features that I implemented are Data formats, sheet listing page, landing view, charts listing, color picker view, etc.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3 class="new-font">Intern</h3>
-							<p>Jan 2017 - Mar 2017</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Zoho Corporation</h4>
-							<p style="text-align: justify;">During my internship, I worked predominantly in Zoho Sheet. The technology used for the frontend works was JSP and Java (Struts) for the backend. The key feature that I implemented during my tenure was the optimization of 'merge across' feature in data part.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<!-- <div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Web Designer</h3>
-							<p>May 2013 - June 2014</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Great Designs Studio</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-						</div>
-
-					</div>  --><!-- /timeline-block -->
-
-				</div> <!-- /timeline-wrap -->   			
-
-			</div> <!-- /col-twelve -->
 			
 		</div> <!-- /resume-timeline -->
 
@@ -205,51 +320,7 @@
 				<!-- <a href="#" title="Download CV" class="button button-primary">Download CV</a> -->
 			<!-- </div>   		 -->
 		<!-- </div> -->
-		<div class="row">
-			<div class="new-font col-twelve">
-				<div class="col-four tab-full" style="text-align: center;">
-					<i class="fas fa-window-maximize" style="font-size: 60px; color: #4169e1;"></i>
-					<h3 class="skillset-heading">Full Stack<br/>Developer</h3>
-					<p class="skillset-content">
-						I am proficient in many web frameworks such as React and Angular along with other quintessential front end technologies. On the server-side programming, I am well versed in Node.js and Spring Boot. I also have knowledge of various DBMS technologies like MySQL, MongoDB, etc.
-					</p>
-				</div>
-				<div class="col-four tab-full" style="text-align: center;">
-					<i class="fas fa-mobile-alt" style="font-size: 60px; color: #4169e1;"></i>
-					<h3 class="skillset-heading">Native Mobile<br/>App Developer</h3>
-					<p class="skillset-content">
-						I am well experienced in creating secure, interactive and intuitive apps for both iOS and Android platforms. For iOS apps, I use Swift or Objective-C (Xcode) and for Android apps, I predominantly use Java in Android Studio.
-					</p>
-				</div>
-				<div class="col-four tab-full" style="text-align: center;">
-					<i class="fas fa-chalkboard-teacher" style="font-size: 60px; color: #4169e1;"></i>
-					<h3 class="skillset-heading">Machine Learning<br/>Developer</h3>
-					<p class="skillset-content">
-						I am well sound in the implementation of standard ML algorithms through libraries, packages, and APIs such as scikit-learn, NumPy, Pandas, etc and applying them effectively to select the right models and learning procedures to fit the data.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-twelve"></div>
-			<div class="col-twelve">
-				<br/><br/>
-                <div class="col-six tab-full"><a href="https://github.com/danieljames-dj?tab=repositories" target="_blank" style="color: inherit;">
-                    <div class="image-container">
-                        <img src="images/developer/projects.png" class="image-dev"></img>
-                        <h2 class="new-font image-title">OPEN SOURCE PROJECTS</h2>
-                        <div class="after"></div>
-                    </div></a>
-				</div>
-				<div class="col-six tab-full"><a href="https://danieljames-dj.github.io/developer-blogs/" target="_blank" style="color: inherit;">
-                    <div class="image-container">
-                        <img src="images/developer/blogs.png" class="image-dev"></img>
-                        <h2 class="new-font image-title">DEVELOPER BLOGS</h2>
-                        <div class="after"></div>
-                    </div></a>
-				</div>
-			</div>
-		</div>
+		
 	</section> <!-- /about -->
 
 	<!-- developer -->
@@ -480,8 +551,26 @@
 		</div>
 		<div class="row">
 			<div class="col-four tab-full">
-				<div class="youtube" data-embed="8Ldh5xPDUN4">
-					<div class="youtube-title">A car ride from Kochi to Chennai 2019 [Travel Diary - Daniel James]</div>
+				<div class="youtube" data-embed="bhtMPU8SCU8">
+					<div class="youtube-title">Tenkasi Days 2019 [Travel Diary - Daniel James]</div>
+					<div class="play-button"></div>
+				</div>
+			</div>
+			<div class="col-four tab-full">
+				<div class="youtube" data-embed="e1xrh-k-SOs">
+					<div class="youtube-title">A trip to Humpi 2020 [Travel Diary - Daniel James, Boby Thomas]</div>
+					<div class="play-button"></div>
+				</div>
+			</div>
+			<div class="col-four tab-full">
+				<div class="youtube" data-embed="zr3PrR0osKo">
+					<div class="youtube-title">A day at Punchakari, Trivandrum 2019 [Travel Diary - Daniel James, Mohammed Redzuan]</div>
+					<div class="play-button"></div>
+				</div>
+			</div>
+			<div class="col-four tab-full">
+				<div class="youtube" data-embed="GpP58zCHl9s">
+					<div class="youtube-title">Scenic Beauty of Train travel Chengalpattu to Kollam - 2019 [Travel Diary - Daniel James]</div>
 					<div class="play-button"></div>
 				</div>
 			</div>
@@ -492,8 +581,8 @@
 				</div>
 			</div>
 			<div class="col-four tab-full">
-				<div class="youtube" data-embed="GpP58zCHl9s">
-					<div class="youtube-title">Scenic Beauty of Train travel Chengalpattu to Kollam - 2019 [Travel Diary - Daniel James]</div>
+				<div class="youtube" data-embed="8Ldh5xPDUN4">
+					<div class="youtube-title">A car ride from Kochi to Chennai 2019 [Travel Diary - Daniel James]</div>
 					<div class="play-button"></div>
 				</div>
 			</div>
@@ -589,7 +678,51 @@
 		<div id="loader"></div>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="zohoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="exampleModalLabel">Zoho</h2>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h5>Member Technical Staff: Full-Stack development (Zoho Sheet)</h5>
+				<ul>
+					<li>Implemented the front-end part of collaboration handling among multiple users in the same spreadsheet.</li>
+					<li>Worked on features like text rotation, row and column grouping, etc.</li>
+					<li>Integrated JS source map, minification and lazy loading for enhancing performance and easy debugging for co-developers.</li>
+				</ul>
+				<h5>Member Technical Staff: iOS development (Zoho Sheet)</h5>
+				<ul>
+					<li>Implemented the file listing page and handled actions like share, delete, mark as favorite, etc.</li>
+					<li>Implemented spreadsheet features like multiline input, picklist, date picker, etc.</li>
+					<li>Worked in migration of the app from Objective-C to Swift 3, and later to Swift 5.</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button> -->
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/purecounter/purecounter.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
 	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>

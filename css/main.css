@@ -1,5 +1,5 @@
 /**
- * =================================================================== 
+ * ===================================================================
  *
  *  Kards v1.0 Main Stylesheet
  *  url: styleshout.com
@@ -11,7 +11,7 @@
  *  03. typography & general theme styles
  *  04. preloader
  *  05. forms
- *  06. buttons 
+ *  06. buttons
  *  07. other components
  *  08. common styles
  *  09. header styles
@@ -25,15 +25,15 @@
  *  17. contact
  *  18. footer
  *
- * =================================================================== 
+ * ===================================================================
  */
 
 
-/** 
+/**
  * ===================================================================
  * 01. webfonts and iconfonts - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
@@ -41,11 +41,11 @@
 @import url("cubing-icons.css");
 
 
-/** 
+/**
  * ===================================================================
  * 02. base style overrides - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 html {
 	font-size: 10px;
@@ -102,11 +102,11 @@ a:focus, a:active {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 h1, h2, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
@@ -282,7 +282,7 @@ hr {
 }
 
 /**
- * Lists - (_document-setup.scss)  
+ * Lists - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 ol {
@@ -330,7 +330,7 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
+ * tables - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 table {
@@ -363,7 +363,7 @@ th:last-child, td:last-child {
 }
 
 /**
- * Spacing - (_document-setup.scss)  
+ * Spacing - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 button, .button {
@@ -390,7 +390,7 @@ form,
 }
 
 /**
- * floated image - (_document-setup.scss)  
+ * floated image - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 img.pull-right {
@@ -401,7 +401,7 @@ img.pull-left {
 }
 
 /**
- * block grid paddings - (_document-setup.scss) 
+ * block grid paddings - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 .bgrid {
@@ -456,11 +456,11 @@ img.pull-left {
 	height: 6px;
 }
 
-/** 
+/**
  * ===================================================================
  * 04. preloader - (_preloader-1.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #preloader {
 	position: fixed;
@@ -519,11 +519,11 @@ img.pull-left {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 05. forms - (_forms.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 fieldset {
 	border: none;
@@ -638,7 +638,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 /**
- * Style Placeholder Text  
+ * Style Placeholder Text
  * -
  */
 ::-webkit-input-placeholder {
@@ -657,11 +657,11 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	color: #a1a1a1 !important;
 }
 
-/** 
+/**
  * ===================================================================
  * 06. buttons - (_button-essentials.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .button,
 a.button,
@@ -693,9 +693,9 @@ input[type="button"] {
 }
 
 .skill-button {
-    white-space: normal;
-    height: auto;
-    line-height: unset !important;
+	white-space: normal;
+	height: auto;
+	line-height: unset !important;
 }
 
 .dev_image {
@@ -774,11 +774,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 07. other components - (_others.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
 /**
@@ -822,7 +822,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 
 /**
- * drop cap 
+ * drop cap
  */
 .drop-cap:first-letter {
 	float: left;
@@ -877,7 +877,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -888,7 +888,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *		</blockquote>
  *	</aside>
  *
- * --------------------------------------------------------------------- 
+ * ---------------------------------------------------------------------
  */
 .pull-quote {
 	position: relative;
@@ -918,7 +918,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -1042,11 +1042,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/** 
+/**
  * ===================================================================
  * 08. common styles (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .grey-section {
 	background: #ebebeb;
@@ -1076,11 +1076,25 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
 }
+.section-intro h3 {
+	color: #4169E1;
+	font-size: 1.6rem;
+	line-height: 1.875;
+	margin-bottom: 0.3rem;
+	letter-spacing: .4rem;
+	font-size: 2.3rem;
+	line-height: 1.565;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	font-family: "poppins-bold";
+}
 
 /**
  * responsive:
  * common styles
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
 	.section-intro {
@@ -1106,11 +1120,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 09. header styles - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 header {
 	position: fixed;
@@ -1154,7 +1168,7 @@ header .logo a {
 
 /**
  * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .menu-toggle {
 	float: left;
@@ -1292,7 +1306,7 @@ header .logo a {
 /**
  * responsive:
  * header styles
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
@@ -1316,11 +1330,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
- * 10. intro - (_layout.scss) 
+ * 10. intro - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #intro {
 	/* background:   center bottom; */
@@ -1457,10 +1471,31 @@ header .logo a {
 	color: #4169e1;
 }
 
+.coder-social {
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	font-size: 3.3rem;
+	margin: 0;
+	padding: 0;
+}
+.coder-social li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+.coder-social li a, .coder-social li a:visited {
+	color: #000000;
+}
+.coder-social li a:hover, .coder-social li a:focus {
+	color: #4169e1;
+}
+
 /**
  * responsive:
  * Intro
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
@@ -1469,7 +1504,13 @@ header .logo a {
 	.intro-social {
 		font-size: 3rem;
 	}
+	.coder-social {
+		font-size: 3rem;
+	}
 	.intro-social li {
+		margin: 0 15px;
+	}
+	.coder-social li {
 		margin: 0 15px;
 	}
 	#intro {
@@ -1494,6 +1535,12 @@ header .logo a {
 		font-size: 2.5rem;
 	}
 	.intro-social li {
+		margin: 0 10px;
+	}
+	.coder-social {
+		font-size: 2.5rem;
+	}
+	.coder-social li {
 		margin: 0 10px;
 	}
 }
@@ -1522,18 +1569,21 @@ header .logo a {
 	.intro-social {
 		font-size: 2.4rem;
 	}
+	.coder-social {
+		font-size: 2.4rem;
+	}
 }
 
 
-/** 
+/**
  * ===================================================================
  * 11. about - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #coder {
 	background: #FFFFFF;
-	padding-top: 12rem;
+	padding-top: 8rem;
 	padding-bottom: 6rem;
 }
 #coder .section-intro {
@@ -1609,7 +1659,7 @@ header .logo a {
 /**
  * responsive:
  * about
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	.intro-info {
@@ -1656,11 +1706,11 @@ header .logo a {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 12. resume - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #resume {
 	padding-top: 12rem;
@@ -1744,7 +1794,7 @@ header .logo a {
 /**
  * responsive:
  * resume
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#coder .timeline-header {
@@ -1818,11 +1868,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 13. portfolio - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #portfolio {
 	background: #FFFFFF;
@@ -1905,7 +1955,7 @@ header .logo a {
 /**
  * responsive:
  * portfolio
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
@@ -2003,7 +2053,7 @@ header .logo a {
 
 /**
  * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
+ * ------------------------------------------------------------------
  */
 
 /* overlay at start */
@@ -2055,11 +2105,11 @@ header .logo a {
 	transform: translateY(-100%);
 }
 
-/** 
+/**
  * ===================================================================
  * 14. call-to-action section - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #cta {
 	padding-top: 10.2rem;
@@ -2084,7 +2134,7 @@ header .logo a {
 
 /**
  * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .section-ads h2 {
 	position: relative;
@@ -2123,11 +2173,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 15. services - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #services {
 	background: #313131 url(../images/bg.jpg) no-repeat center;
@@ -2211,11 +2261,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 16. stats - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #stats {
 	background: #990047;
@@ -2277,11 +2327,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 17. contact - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #contact {
 	background: #151515;
@@ -2464,7 +2514,7 @@ header .logo a {
 
 /**
  * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 .s-loader {
 	margin: 1.2rem auto 3rem;
@@ -2518,11 +2568,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 18. footer - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 footer {
 	padding-top: 3rem;
@@ -2593,7 +2643,7 @@ footer .copyright span:last-child::after {
 
 /**
  * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #go-top {
 	position: fixed;
@@ -2884,8 +2934,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #fff !important;
+	transition: background-color 5000s ease-in-out 0s;
+	-webkit-text-fill-color: #fff !important;
 }
 
 @media (hover: hover) {
@@ -2990,40 +3040,40 @@ ul#nav li.current a {color:#4169E1;}
 }
 
 .image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0);
 }
 .image-container .after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: #FFF;
 }
 .image-container:hover .after {
-    display: block;
-    background: rgba(0, 0, 0, .7);
+	display: block;
+	background: rgba(0, 0, 0, .7);
 }
 
 .image-dev {
-    display: block;
+	display: block;
 	opacity: 0.3;
 	margin-bottom: 5%;
 }
 
 .image-title {
-    position: absolute;
-    opacity: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: white;
-    letter-spacing: 4px;
-    text-align: center;
+	letter-spacing: 4px;
+	text-align: center;
 }
 
 .skillset-heading {
@@ -3060,4 +3110,240 @@ ul#nav li.current a {color:#4169E1;}
 	text-transform: uppercase;
 	font-weight: 100;
 	line-height: 1.5;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+  left: 0px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #34b7a7;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  background: rgba(34, 34, 34, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(34, 34, 34, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info button {
+	margin-top: 20px;
+	text-align: center;
+  /* color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  text-align: center; */
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #78d9cd;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 0;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #34b7a7;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #34b7a7;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.portfolio-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.portfolio-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.portfolio-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #34b7a7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.portfolio-title p {
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+.coding-button {
+	text-transform: initial !important;
 }
