@@ -1445,6 +1445,38 @@ header .logo a {
 	transform: translateY(-5px);
 }
 
+#about {
+	background: #151515;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-intro h5 {
+	color: #64ffda;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.846;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+	margin-bottom: 1.2rem;
+}
+.section-intro h1 {
+	color: #ccd6f6;
+	font-family: "poppins-bold", sans-serif;
+	font-size: clamp(3.2rem, 5vw, 4.8rem);
+	line-height: 1.25;
+	margin-bottom: 3.2rem;
+}
+.lead {
+	font-family: "lora-regular", serif;
+	font-size: 2rem;
+	line-height: 1.8;
+	color: #8892b0;
+}
+
 .scrolldown {
 	position: absolute;
 	left: 50%;

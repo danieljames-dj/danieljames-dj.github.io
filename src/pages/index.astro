@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Intro from '../components/Intro.tsx';
+import About from '../components/About.tsx';
 import Coder from '../components/Coder.astro';
 import Developer from '../components/Developer.astro';
 import Cuber from '../components/Cuber.astro';
@@ -15,6 +16,8 @@ import Footer from '../components/Footer.astro';
 	<Nav />
 
 	<Intro client:load />
+
+	<About client:load />
 
 	<Coder />
 
