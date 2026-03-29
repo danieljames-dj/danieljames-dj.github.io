@@ -1,23 +1,83 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+interface Props {
+	title: string;
+}
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<title>{title}</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/fa/all.min.css">
+	<link rel="stylesheet" href="/css/fa/fontawesome.min.css">
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/vendor.css">
+	<link rel="stylesheet" href="/css/card.css">
+	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+	<!-- Vendor CSS Files -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+	<!-- script -->
+	<script src="/js/modernizr.js" is:inline></script>
+	<script src="/js/pace.min.js" is:inline></script>
+
+	<!-- Browser icon -->
+	<link rel="icon" type="image/icon" href="/favicon.ico">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150422597-1"></script>
+	<script is:inline>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-150422597-1');
+	</script>
+
+</head>
+
+<body id="top">
+	<slot />
+
+	<script src="/assets/vendor/aos/aos.js" is:inline></script>
+	<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" is:inline></script>
+	<script src="/assets/vendor/glightbox/js/glightbox.min.js" is:inline></script>
+	<script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" is:inline></script>
+	<script src="/assets/vendor/php-email-form/validate.js" is:inline></script>
+	<script src="/assets/vendor/purecounter/purecounter.js" is:inline></script>
+	<script src="/assets/vendor/swiper/swiper-bundle.min.js" is:inline></script>
+	<script src="/assets/vendor/waypoints/noframework.waypoints.js" is:inline></script>
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" is:inline></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" is:inline></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" is:inline></script>
+	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8" is:inline></script>
+	<script src="/js/jquery-2.1.3.min.js" is:inline></script>
+	<script src="/js/plugins.js" is:inline></script>
+	<script src="/js/main.js" is:inline></script>
+
+</body>
+</html>
